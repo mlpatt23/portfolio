@@ -13,6 +13,8 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 		</script>
 		<! [endif] -->
+			
+		<?php wp_head(); ?>
 	</head>
 	
 	<body>
@@ -22,8 +24,8 @@
 				<div class="half-width">
 					<h1>
 						<a href="#home">
-							<img src="img/header-logo.png" alt="Melanie Patterson | Web Designer &amp; Front End Developer" id="logo-desktop">
-							<img src="img/header-logo-mobile.png" alt="MP Web Designer and Developer" id="logo-mobile">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/header-logo.png" alt="Melanie Patterson | Web Designer &amp; Front End Developer" id="logo-desktop">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/header-logo-mobile.png" alt="MP Web Designer and Developer" id="logo-mobile">
 						</a>
 					</h1>
 				</div>
