@@ -42,6 +42,31 @@
 
 
 
+	// Register about post type
+	function portfolio_about() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "About" )
+			),
+			"description" => __( "Description", "portfolio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "about" ),
+			"show_ui" => true,
+			"menu_position" => 20
+		);
+		
+		
+		register_post_type( "about", $args);
+		
+		
+	}
+	
+	add_action('init', 'portfolio_about');
+	
+	
+	
+	
 	// Register projects post type
 	function portfolio_projects() {
 		$args = array(
@@ -65,6 +90,9 @@
 	
 	add_action('init', 'portfolio_projects');
 	
+	
+	
+	
 	// Register skills post type
 	function portfolio_skills() {
 		$args = array(
@@ -87,6 +115,11 @@
 	}
 	
 	add_action('init', 'portfolio_skills');
+	
+	
+	
+	
+	
 
 	
 ?>
