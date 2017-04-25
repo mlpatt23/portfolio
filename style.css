@@ -24,3 +24,7 @@ Marcellus, serif
 #232735 - dark blue
 rgba(39, 44, 60, 0.85) - transparent dark blue
 */
+
+body {
+	background: green;
+}
