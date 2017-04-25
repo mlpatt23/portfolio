@@ -39,5 +39,31 @@
 	
 	add_action('wp_enqueue_scripts', 'portfolio_styles');
 
+
+
+
+	// Register projects post type
+	function portfolio_projects() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Projects" ),
+				"singular_name" => __( "Project" )
+			),
+			"description" => __( "Description", "portfolio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "projects" ),
+			"show_ui" => true,
+			"menu_position" => 20
+		);
+		
+		
+		register_post_type( "projects", $args);
+		
+		
+	}
+	
+	add_action('init', 'portfolio_projects');
+
 	
 ?>
