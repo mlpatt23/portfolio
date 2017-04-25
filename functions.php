@@ -64,6 +64,29 @@
 	}
 	
 	add_action('init', 'portfolio_projects');
+	
+	// Register skills post type
+	function portfolio_skills() {
+		$args = array(
+			"labels" => array(
+				"name" => __( "Skills" ),
+				"singular_name" => __( "Skill" )
+			),
+			"description" => __( "Description", "portfolio" ),
+			"public" => true,
+			"publicly_queryable" => true,
+			"rewrite" => array( "slug" => "skills" ),
+			"show_ui" => true,
+			"menu_position" => 20
+		);
+		
+		
+		register_post_type( "skills", $args);
+		
+		
+	}
+	
+	add_action('init', 'portfolio_skills');
 
 	
 ?>
