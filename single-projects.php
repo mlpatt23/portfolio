@@ -6,7 +6,7 @@
 			<?php
 				$args = array(
 					'post_type' => 'projects',
-					'order' => 'ASC'
+					'posts_per_page' => 1
 				);
 	
 				query_posts($args);

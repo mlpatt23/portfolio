@@ -79,9 +79,8 @@
 			),
 			"description" => __( "Description", "portfolio" ),
 			"public" => true,
-			"publicly_queryable" => true,
+			"has_archive" => true,
 			"rewrite" => array( "slug" => "projects" ),
-			"show_ui" => true,
 			"menu_position" => 20
 		);
 		

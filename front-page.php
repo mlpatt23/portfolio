@@ -227,12 +227,19 @@
 				<div class="box" id="contact-box">
 					<h3>Think we should work together?<br>I do too!</h3>
 					
-					<?php while(have_posts()) : the_post(); ?>
+					<?php
+						$args = array(
+							'pagename' => 'home'
+						);
+				
+						query_posts($args);
+				
+						if ( have_posts() ) : while(have_posts()) : the_post(); ?>
 		
-						<p><?php the_content(); ?></p>
+							<p><?php the_content(); ?></p>
 		
-					<?php endwhile; ?>
-					
+						<?php endwhile; wp_reset_postdata(); ?>
+					<?php endif; ?>	
 				</div> <!-- box -->
 			</div> <!-- third-width -->
 		</div> <!-- full-width -->
