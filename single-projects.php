@@ -1,17 +1,15 @@
-<?php get_header(); ?>
+<?php 
+/*
+* The template for displaying single projects
+*/
+
+get_header(); ?>
 
 	<section class="single-project">
 		<div class="full-width">
 			
-			<?php
-				$args = array(
-					'post_type' => 'projects',
-					'posts_per_page' => 1
-				);
-	
-				query_posts($args);
-	
-				if ( have_posts() ) : while(have_posts()) : the_post();
+			<?php if ( have_posts() ) : 
+				while(have_posts()) : the_post();
 
 
 					$image = get_field('image');
