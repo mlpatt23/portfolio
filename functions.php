@@ -9,6 +9,8 @@
 		
 		wp_register_style('googlefont_raleway', 'https://fonts.googleapis.com/css?family=Raleway:200,300', array(), '1.0.0');
 		
+		wp_register_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0');
+		
 		wp_register_style('style', get_template_directory_uri() . '/style.css', array('boilerplate'), '1.0');
 		
 		
@@ -27,6 +29,7 @@
 		wp_enqueue_style('boilerplate');
 		wp_enqueue_style('googlefont_marcellus');
 		wp_enqueue_style('googlefont_raleway');
+		wp_enqueue_style('fontawesome');
 		wp_enqueue_style('style');
 		
 		// Enqueue the scripts

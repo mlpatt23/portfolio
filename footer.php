@@ -7,9 +7,9 @@
 				
 				<div class="half-width">
 					<ul class="social-media-list">
-						<li><a href="https://www.facebook.com/mlpatt23/" target="_blank"><img src="img/icons/icon-facebook.png" alt="Facebook Icon"></a></li>
-						<li><a href="https://www.pinterest.com/jinxyminxy23/pins/" target="_blank"><img src="img/icons/icon-pinterest.png" alt="Pinterest Icon"></a></li>
-						<li><a href="https://www.linkedin.com/in/melanie-patterson-1a76a3132" target="_blank"><img src="img/icons/icon-linkedin.png" alt="LinkedIn Icon"></a></li>
+						<li><a href="https://www.facebook.com/mlpatt23/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.pinterest.com/jinxyminxy23/pins/" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/melanie-patterson-1a76a3132" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
 					</ul> <!-- social-media-list -->
 					
 				</div> <!-- half-width -->
