@@ -236,6 +236,7 @@ nav ul li a {
 
 .individual-project img {
 	width: 100%;
+	height: auto;
 }
 
 .overlay {
@@ -308,6 +309,7 @@ a.coming-soon:hover {
 	width: 40%;
 	display: block;
 	margin: 10px auto;
+	height: auto;
 }
 
 .skills a:link, 
@@ -322,7 +324,6 @@ a.coming-soon:hover {
 
 /*************** Contact Styles ****************/
 .contact {
-	background-image: url("../img/background-img/workspace.jpg");
 	clear: both;
 	height: 850px;
 }
