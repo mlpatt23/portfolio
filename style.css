@@ -156,10 +156,6 @@ header .half-width {
 	float: left;
 }
 
-/*header h1 img {
-	width: 100%;
-}*/
-
 #logo-desktop {
 	display: none;
 }
@@ -187,7 +183,6 @@ nav ul li a {
 }
 
 .jumbotron {
-	background-image: url("../img/background-img/mill-ave-bridge.jpg");
 	height: 470px;
 }
 
@@ -217,6 +212,7 @@ nav ul li a {
 	padding: 10px;
 	width: 70%;
 	max-width: 170px;
+	height: auto;
 }
 
 .about p {

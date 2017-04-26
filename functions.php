@@ -93,6 +93,7 @@
 	
 	
 	
+	
 	// Register skills post type
 	function portfolio_skills() {
 		$args = array(
@@ -116,7 +117,7 @@
 	
 	add_action('init', 'portfolio_skills');
 	
-	
+
 	
 	
 	

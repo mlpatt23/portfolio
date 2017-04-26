@@ -28,7 +28,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/header-logo-mobile.png" alt="MP Web Designer and Developer" id="logo-mobile">
 						</a>
 					</h1>
-				</div>
+				</div> <!-- half-width -->
 				
 				<div class="half-width">
 					<nav id="nav">
@@ -38,6 +38,6 @@
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
-				</div>
-			</div>
+				</div> <!-- half-width -->
+			</div> <!-- full-width -->
 		</header>
