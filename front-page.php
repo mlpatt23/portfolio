@@ -38,7 +38,6 @@
 					<div class="two-thirds-width">
 						<?php the_content(); ?>
 					</div>	<!-- two-thirds -->
-			
 		
 				<?php endwhile; wp_reset_postdata(); ?>
 			<?php endif; ?>
@@ -67,18 +66,19 @@
 						$firstPosts[] = $post->ID;
 				
 						$image = get_field('image');
-						$size = "medium"; ?>
+						$size = "medium"; 
+						$post_id = get_field('post_id'); ?>
 				
 			
 						<div class="third-width">
 							<div class="individual-project">
-								<a href="mm-studio/index.html"><?php echo wp_get_attachment_image($image, $size); ?></a>
+								<a href="<?php echo get_permalink($post_id); ?>"><?php echo wp_get_attachment_image($image, $size); ?></a>
 					
 								<div class="overlay">
 					
 									<h3><?php the_title(); ?></h3>
 									<div>
-										<a href="mm-studio/index.html" class="description">View Description</a>
+										<a href="<?php echo get_permalink($post_id); ?>" class="description">View Description</a>
 										<a href="" class="site  coming-soon">Visit Site</a>
 										<p>Coming Soon!</p>
 									</div>
@@ -113,18 +113,19 @@
 						$firstPosts[] = $post->ID;
 				
 						$image = get_field('image');
-						$size = "medium"; ?>
+						$size = 'medium'; 
+						$post_id = get_field('post_id'); ?>
 				
 			
 						<div class="third-width">
 							<div class="individual-project">
-								<a href="mm-studio/index.html"><?php echo wp_get_attachment_image($image, $size); ?></a>
+								<a href="<?php echo get_permalink($post_id); ?>"><?php echo wp_get_attachment_image($image, $size); ?></a>
 					
 								<div class="overlay">
 					
 									<h3><?php the_title(); ?></h3>
 									<div>
-										<a href="mm-studio/index.html" class="description">View Description</a>
+										<a href="<?php echo get_permalink($post_id); ?>" class="description">View Description</a>
 										<a href="" class="site">Visit Site</a>
 								
 									</div>
