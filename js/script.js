@@ -9,4 +9,12 @@ $("document").ready(function() {
 		e.preventDefault();
 	});
 	
+	
+	// Adds active class to portfolio nav link on single-projects.php
+	$(".single-projects header nav ul #home-link").removeClass("active");
+	
+	$(".single-projects header nav ul #portfolio-link").addClass("active");
+	
+	
+	
 });

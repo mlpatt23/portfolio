@@ -26,6 +26,10 @@ rgba(39, 44, 60, 0.85) - transparent dark blue
 */
 
 /************ General Styles ************/
+#wpadminbar {
+	display: none;
+}
+
 body {
 	font-family: "Raleway", sans-serif;
 	/* Setting default font-size for responsive design */
@@ -147,7 +151,7 @@ p {
 /************ Home Styles ************/
 header {
 	background-color: rgba(39, 44, 60, 0.85);
-	position: fixed;
+ 	position: fixed;
 	z-index: 10;
 }
 
@@ -406,14 +410,14 @@ footer p {
 }
 
 /************ Single Project Styles ************/
-.non-fixed-header {
-	background-color: rgba(39, 44, 60, 0.95);
+.single-projects header {
+	background-color: rgba(39, 44, 60, 1);
 	position: fixed;
-		top: 0;
+	top: 0;
 }
 
 .single-project {
-	margin-top: 100px;
+	margin: 50px auto;
 }
 
 .single-project .half-width {
@@ -454,9 +458,7 @@ footer p {
 	margin-right: 20px;
 }
 
-.fixed-footer {
-	padding: 5px 0;
-}
+
 
 /************ Thank You Page Styles ************/
 .thank-you-page .third-width {
@@ -669,12 +671,11 @@ footer p {
 		line-height: 1.5em;
 	}
 
-	.fixed-footer p {
-		font-size: 1em;
-	}
+	.single-projects footer {
+		position: relative;
+		top: 100px;
 
-	.fixed-footer li img {
-		width: 30px;
+	
 	}
 	
 	/************ Thank You Page Styles ************/

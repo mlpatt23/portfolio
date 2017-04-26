@@ -17,7 +17,7 @@
 		<?php wp_head(); ?>
 	</head>
 	
-	<body>
+	<body <?php body_class(); ?>>
 		
 		<header>
 			<div class="full-width">
@@ -33,9 +33,9 @@
 				<div class="half-width">
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="#home">Home</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li class="active" id="home-link"><a href="#home">Home</a></li>
+							<li id="portfolio-link"><a href="#portfolio">Portfolio</a></li>
+							<li id="contact-link"><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div> <!-- half-width -->

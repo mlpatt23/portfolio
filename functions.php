@@ -121,8 +121,20 @@
 	
 
 	
+	// Add ing single-projects class to body on single-projects.php template
+	function single_projects_body_class( $classes ) {
+ 
+	    if ( is_page_template( 'single-projects.php' ) ) {
+	        $classes[] = 'single-projects';
+	    }
+     
+	    return $classes;
+     
+	}
 	
-	
+	add_filter( 'body_class', 'single_projects_body_class' );
+		
+		
 
 	
 ?>
