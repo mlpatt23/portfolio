@@ -15,7 +15,7 @@
 		
 		
 		// Add in scripts
-		wp_register_script('jquery', 'https://code.jquery.com/jquery-3.1.1.slim.min.js', array(), '3.1.1', true);
+		wp_register_script('jquery', 'https://code.jquery.com/jquery-3.2.1.js', array(), '3.2.1', true);
 		
 		// cloudfare and scrollspy scripts enable the scrollspy navigation without Bootstrap
 		wp_register_script('cloudfare', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', array('jquery'), '2.1.3', true);
@@ -41,7 +41,10 @@
 	}
 	
 	add_action('wp_enqueue_scripts', 'portfolio_styles');
-
+	
+	
+	
+	
 
 
 
