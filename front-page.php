@@ -76,7 +76,8 @@
 				
 						$image = get_field('image');
 						$size = "medium"; 
-						$post_id = get_field('post_id'); ?>
+						$post_id = get_field('post_id'); 
+						$coming_soon = get_field('coming_soon'); ?>
 				
 			
 						<div class="third-width">
@@ -88,8 +89,19 @@
 									<h3><?php the_title(); ?></h3>
 									<div>
 										<a href="<?php echo get_permalink($post_id); ?>" class="description">View Description</a>
-										<a href="" class="site  coming-soon">Visit Site</a>
-										<p>Coming Soon!</p>
+										
+										<?php if ($coming_soon) { ?>
+											
+											<a href="" class="site  coming-soon">Visit Site</a>
+										
+											<p><?php echo $coming_soon; ?></p>
+										
+									 	<?php } else { ?>
+											
+											<a href="" class="site">Visit Site</a>
+									
+										<?php } ?>
+										
 									</div>
 						
 								</div> <!-- overlay -->
@@ -123,7 +135,8 @@
 				
 						$image = get_field('image');
 						$size = 'medium'; 
-						$post_id = get_field('post_id'); ?>
+						$post_id = get_field('post_id'); 
+						$coming_soon = get_field('coming_soon'); ?>
 				
 			
 						<div class="third-width">
@@ -135,7 +148,17 @@
 									<h3><?php the_title(); ?></h3>
 									<div>
 										<a href="<?php echo get_permalink($post_id); ?>" class="description">View Description</a>
-										<a href="" class="site">Visit Site</a>
+										<?php if ($coming_soon) { ?>
+											
+											<a href="" class="site  coming-soon">Visit Site</a>
+										
+											<p><?php echo $coming_soon; ?></p>
+										
+									 	<?php } else { ?>
+											
+											<a href="" class="site">Visit Site</a>
+									
+										<?php } ?>
 								
 									</div>
 						

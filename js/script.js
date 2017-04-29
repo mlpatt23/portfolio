@@ -25,11 +25,7 @@ $("document").ready(function() {
 	$(".single-projects header nav ul #home-link").removeClass("active");
 	
 	$(".single-projects header nav ul #portfolio-link").addClass("active");
-	
-	
-	
-	// Adds in php link to fragment ids in single-projects.php?
-	/*$(".single-projects header nav ul #home-link a").attr("href", "<?php the_permalink(6); ?>#home");*/
+
 	
 	
 	
